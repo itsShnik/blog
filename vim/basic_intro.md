@@ -20,9 +20,13 @@ Operators in vim are used to specify the operation to be done on the selected te
 
 
 ```c```: Change
+
 ```d```: Delete
+
 ```y```: Yank
+
 ```gU```: Make uppercase
+
 ```gu```: Make lowercase
 
 ## All the tricks
@@ -43,6 +47,8 @@ These names for keys are used in the documentation.  They can also be used
 with the ":map" command (insert the key name by pressing CTRL-K and then the
 key you want the name for).
 
+
+```
 notation	meaning		    equivalent	decimal value(s)	~
 -----------------------------------------------------------------------
 <Nul>		zero			CTRL-@	  0 (stored as 10) *<Nul>*
@@ -103,5 +109,4 @@ notation	meaning		    equivalent	decimal value(s)	~
 <D-...>		command-key (Macintosh only)	*<D-*
 <t_xx>		key with "xx" entry in termcap
 -----------------------------------------------------------------------
-
-
+```
