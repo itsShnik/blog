@@ -2,7 +2,6 @@
 
 Vim is a very powerful _text editor_ which actually can do much more than just editing text. The vast variety of commands, plugins, scripts, services allow you to tune vim to the level of your extreme comfort. Always remember, when you are learning Vim, just think of becoming lazier like just find a modify a piece of text investing in the least possible efforts. The more you get lazy, the more Vim helps you get lazier.
 
-
 ## Opening Vim
 
 On a command prompt type the following command
@@ -29,6 +28,27 @@ Operators in vim are used to specify the operation to be done on the selected te
 
 ```gu```: Make lowercase
 
+## Normal mode text editing options
+
+Cursor: j, k, h, l
+
+Insert a new line below and start editing it: ```o```
+
+Insert a new line above and start editing it: ```O```
+
+Go to the first character of the line: ```0```
+
+Go to the first non-space character of the line: ```_```
+
+Go to the first non-space character of the line and start inserting: ```I```
+
+Go to the end of the line: ```$```
+
+Go to the end of the line and start inserting (Append): ```A```
+
+
+	
+
 ## All the tricks
 
 I will write all the tricks that I will learn here
@@ -39,6 +59,19 @@ I will write all the tricks that I will learn here
 
 - Regex for matching anything except a ',' ```[^,]``` 
 - Catching backreferences: ```\( \)``` are used to catch backreferences.
+
+- different themes for different types of files in vim
+
+	- for example I want markdown and text files to have calmar256-light theme and codes to have monokai-chris. I will have this in my vimrc
+
+	```
+	" setting monokai as default
+	colorscheme monokai-chris
+
+	" auto command to change theme for md and txt files
+	autocmd BufEnter *.md colorscheme calmar256-light
+	autocmd BufEnter *.txt colorscheme calmar256-light
+	```
 
 
 ## These key names might be useful
